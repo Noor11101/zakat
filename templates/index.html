@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='../static/./css/bootstrap.min.css') }}" />
+</head>
+<body>
+    <div class="container">
+        <div class="row"></div>
+        <div class="box">
+            <div class="title pt-5  text-center d-flex justify-content-center align-items-center">
+                <div class="col-md-3">
+                    <h3>Calculator</h3>
+                </div>
+    
+            </div>
+    
+            <div class="model pb-5 d-flex justify-content-center align-items-center">
+                <div class="col-md-4">
+                    <form action="/process" method="POST">
+                        <div class="inputGroup">
+                            <input type="text" name="weight" required autocomplete="off">
+                            <label for="name">weight</label>
+                        </div>
+                        <div class="inputGroup">
+                            <input type="text"  name="karat" required autocomplete="off">
+                            <label for="name" >karat</label>
+                        </div>
+                        <div class="inputGroup">
+                            <input type="text" name="price_gold" required  autocomplete="off">
+                            <label for="name">price gold</label>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary mt-3 mb-3 ">Submit</button>
+                      </form>
+    
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    
+</body>
+</html>
+
+
