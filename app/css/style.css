@@ -1,0 +1,69 @@
+* {
+margin: 0;
+box-sizing: border-box;
+font-family: 'Tajawal', sans-serif; /* خط يدعم اللغة العربية */
+}
+
+body {
+      
+background-color: #e6e6ad;
+background-image: radial-gradient(#ccc 1px, transparent 1px); /* نقاط خفيفة */
+background-size: 10px 10px; /* حجم النقاط والمسافة بينها */
+display: flex;
+justify-content: center;
+align-items: center;
+min-height: 100vh; /* لجعل الصفحة تأخذ ارتفاع الشاشة بالكامل */
+margin: 0;
+}
+
+
+.container {
+text-align: center;
+width: 100%;
+/* max-width: 400px; تحديد عرض النموذج */
+}
+.inputGroup {
+      font-family: 'Tajawal', sans-serif;
+      margin: 1em 0;
+      position: relative;
+  }
+  
+  .inputGroup input,
+  .inputGroup select {
+      font-size: 100%;
+      padding: 0.8em;
+      outline: none;
+      border: 2px solid rgb(200, 200, 200);
+      background-color: transparent;
+      border-radius: 20px;
+      width: 100%;
+      text-align: right; /* محاذاة النص لليمين */
+  }
+  
+  .inputGroup label {
+      font-size: 100%;
+      position: absolute;
+      right: 0; /* تغيير الموضع لليمين */
+      padding: 0.4em; /* Adjusted padding */
+      margin-right: 1.3em; /* تغيير الهامش لليمين */
+      pointer-events: none;
+      transition: all 0.3s ease;
+      color: rgb(100, 100, 100);
+      transform: translateY(-50%) scale(.9); /* Apply transform by default */
+      background-color: #e6e6ad; /* Apply background color by default */
+  }
+  
+  .inputGroup :is(input:focus, select:focus) {
+      border-color: rgb(150, 150, 200);
+  }
+h2 {
+text-align: center;
+margin-top: 20px;
+font-family: 'Tajawal', sans-serif;
+}
+
+.language-switcher {
+position: absolute;
+top: 20px;
+right: 20px;
+}
